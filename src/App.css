@@ -1,0 +1,285 @@
+.App {
+  background-color: #18171f;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+  color: white;
+}
+
+.Divider {
+  border: none;
+  border-top: 1px solid #8c8a8a;
+  color: #737171;
+  background-color: #7f7d7d;
+  height: 1px;
+  width: 95%;
+}
+
+/* NAVBAR */
+.NavigateLayout {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding-right: 5;
+  padding-top: 1%;
+}
+
+.LoginLayout {
+  display: flex;
+  flex-grow: 1;
+  align-self: flex-end;
+  justify-content: flex-end;
+  padding-right: 5%;
+}
+
+.BannerLayout {
+  display: flex;
+  flex-grow: 4;
+  align-items: center;
+  justify-content: center;
+  padding-right: 5;
+}
+
+
+
+
+/* CARDS */
+.MainCardContainer {
+  display: flex;
+  width: 90%;
+  min-height: 40vh;
+  justify-content: center;
+  background-color: #2d3036;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 5%;
+} 
+
+.GroupCardMainLayout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+
+.GroupCardLayout {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 20%;
+  height: 30%;
+  background-color: #2d3036;
+  margin: 0.5%;
+}
+
+.BigCardItemLeft {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  padding-top: 1%;
+  margin-left: 0.5%;
+}
+
+.BigCardItemCenter {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  justify-content: center;
+  padding-right: 5;
+  padding-top: 1%;
+}
+
+.BigCardItemRight {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: flex-end;
+  padding-right: 5;
+}
+
+.StyledCardButton {
+  display: flex;
+  background-color: gray;
+  height: fit-content;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 10px;
+  align-self: center;
+  text-align: center;
+  align-items: center;
+  padding: 1%;
+  color:#fcfcfc;
+}
+
+.PlainCardButton {
+  display: flex;
+  height: 5vh;
+  font-size: smaller;
+  font-weight: 700;
+  align-self: center;
+  text-align: center;
+  align-items: center;
+  padding: 2%;
+  color:#fcfcfc;
+}
+
+.CategoriesCard {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  justify-content: space-between;
+}
+
+.Line {
+  width: 5%;
+  height: 8%;
+}
+
+.PromotionalSVG {
+  width: 30cqw;
+  height: 35cqh;
+  margin-bottom: 2%;
+}
+
+.Arrow {
+  width: 5%;
+  height: 8%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+.Container {
+  background-color: #18171f;
+  display: flex;
+  flex-direction: row;
+  min-width: 10vw;
+  height: 50%;
+  padding-left: 2%;
+  padding-right: 2%;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.StyledButton {
+  display: flex;
+  flex-direction: row;
+  background-color: #000000;
+  border-radius: 15px;
+  border: 2px solid gray;
+  min-width: 10vw;
+  height: 15%;
+  justify-content: center;
+  padding: 2%;
+  color:#fcfcfc;
+}
+
+.PlainButton {
+  display: flex;
+  max-width: 10vw;
+  height: 5vh;
+  font-size: small;
+  font-weight: 700;
+  text-align: center;
+  padding: 2%;
+  color:#fcfcfc;
+}
+
+.NavBarSVG {
+  display: flex;
+  max-width: 10vw;
+  height: 5vh;
+  font-size: small;
+  font-weight: 700;
+  text-align: center;
+  padding: 2%;
+  color:#fcfcfc;
+}
+
+
+
+.Text {
+  display: flex;
+  font-size: 10cqw;
+}
+
+@media (max-width: 768px) {
+  .App {
+    background-color: #18171f;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: calc(5px + 2vmin);
+    color: white;
+  }
+
+  .Text {
+    font-size: 2.5cqw;
+  }
+
+  .NavBarSVG {
+    display: flex;
+    max-width: 10vw;
+    height: 5cqw;
+    text-align: center;
+  }
+
+  .PromotionalSVG {
+    width: 25cqw;
+    height: 25cqh;
+    margin-bottom: 2%;
+  }
+
+  .MainCardContainer {
+    display: flex;
+    width: 90%;
+    min-height: 20vh;
+    justify-content: space-evenly;
+    background-color: #2d3036;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 5%;
+  }
+
+  .BigCardItemLeft {
+    display: none;
+  }
+
+  .BigCardItemCenter {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    padding-right: 5;
+    padding-top: 1%;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .Text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Text {
+    font-size: 20px;
+  }
+}
+
