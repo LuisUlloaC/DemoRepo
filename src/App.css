@@ -110,6 +110,7 @@
   flex-direction: column;
   padding-right: 5;
   height: 100%;
+  max-width: 30cqw;
 }
 
 .StyledCardButton {
@@ -129,7 +130,7 @@
 .PlainCardButton {
   display: flex;
   height: 5vh;
-  font-size: smaller;
+  font-size: larger;
   font-weight: 700;
   align-self: center;
   text-align: center;
@@ -222,210 +223,68 @@
 
 
 .ListItem {
-  display: flex; 
-  flex-direction: column;
+  display: flex;
   justify-content: flex-start;
+  flex-direction: column;
+  overflow-y: scroll;
+  width: 100%;
   height: 55vh;
 }
 
 .SelectedTabOnSearchCard {
   display: flex ;
-  height: 5vh;
-  flex-grow: 2; 
+  height: 80%;
   justify-content: center;
-  font-size: 100%;
+  align-self: center;
+  margin: 2%;
+  padding: 1%;
+  font-size: 3vh;
   font-weight: 700;
   background-color: #8c8a8a;
   border-radius: 12px;
 }
 
-
-.List{list-style-type:none;padding:0;margin:0}
-.List li{padding:2% 5%;border-bottom:0.5%;}
-.List li:last-child{border-bottom:none}
-
-.Hoverable-list-item tbody tr:hover{overflow: hidden;}.List.Hoverable-list-item li:hover{background-color:#8a8989}
-.Hoverable-list-item-centered tr th,
-.Hoverable-list-item-centered tr td{text-align:justify;}
-
-@media (max-widht:1200px) {
-  .App {
-    background-color: #18171f;
-    min-height: 100vh;
-    min-width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    color: white;
-    padding-top: 0.1vh;
-  }
-
-  .Text {
-    font-size: 10px;
-  }
-
-  .NavBarSVG {
-    display: flex;
-    max-width: 10vw;
-    height: 10cqw;
-    text-align: center;
-    padding-bottom: 10%;
-  }
-
-  .PromotionalSVG {
-    width: 25cqw;
-    height: 25cqh;
-    margin-bottom: 2%;
-  }
-
-  .MainCardContainer {
-    display: flex;
-    width: 90%;
-    min-height: 20vh;
-    justify-content: space-evenly;
-    background-color: #2d3036;
-    padding-bottom: 2%;
-    margin-bottom: 5%;
-  }
-
-  .BigCardItemLeft {
-    display: none;
-  }
-
-  .BigCardItemRight {
-    display: flex;
-    flex-direction: column;
-    padding-right: 5;
-    height: 100%;
-    max-height: 45vh;
-    min-width: 95cqw;
-  }
-
-  .BigCardItemCenter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 2;
-    max-height: 50vh;
-    padding-right: 5;
-    padding-top: 10%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-
-  .ListItem {
-    display: flex; 
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 25vh;
-    width: 45cqw;
-  }
-
-  .SelectedTabOnSearchCard {
-    display: flex ;
-    height: 5vh;
-    flex-grow: 2; 
-    justify-content: center;
-    font-size: 2vh;
-    padding-top: 1%;
-    background-color: #8c8a8a;
-    border-radius: 12px;
-    font-weight: 700;
-
-  }
-  
+.list-item {
+  height: 50px;
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 10px;
   
 }
 
-@media (max-width: 768px) {
-  .App {
-    background-color: #18171f;
-    min-height: 100vh;
-    min-width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    color: white;
-    padding-top: 0.1vh;
-  }
-
-  .Text {
-    font-size: 10px;
-  }
-
-  .NavBarSVG {
-    display: flex;
-    max-width: 10vw;
-    height: 10cqw;
-    text-align: center;
-    padding-bottom: 10%;
-  }
-
-  .PromotionalSVG {
-    width: 25cqw;
-    height: 25cqh;
-    margin-bottom: 2%;
-  }
-
-  .MainCardContainer {
-    display: flex;
-    width: 90%;
-    min-height: 20vh;
-    justify-content: space-evenly;
-    background-color: #2d3036;
-    padding-bottom: 2%;
-    margin-bottom: 5%;
-  }
-
-  .BigCardItemLeft {
-    display: none;
-  }
-
-  .BigCardItemRight {
-    display: flex;
-    flex-direction: column;
-    padding-right: 5;
-    height: 100%;
-    max-height: 45vh;
-    
-  }
-
-  .BigCardItemCenter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 2;
-    max-height: 50vh;
-    padding-right: 5;
-    padding-top: 10%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-
-  .ListItem {
-    display: flex; 
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 25vh;
-    width: 45cqw;
-  }
-
-  .SelectedTabOnSearchCard {
-    display: flex ;
-    height: 5vh;
-    flex-grow: 2; 
-    justify-content: center;
-    font-size: 2vh;
-    padding-top: 3%;
-    background-color: #8c8a8a;
-    border-radius: 12px;
-    font-weight: 700;
-  }
-
+.badge {
+  border-radius: 12px;
+  background-color: #8a8989;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 10px;
 }
 
+.circular {
+  border-radius: 50%;
+  padding: 5%;
+  margin-right: 20%;
+  background-image: url('https://i.ibb.co/wY6sSz0/avatar-Sample.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+.name {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-
+.plus-btn {
+  background-color: white;
+  border: 1px solid #8a8989;
+  border-radius: 50%;
+  color: #8a8989;
+  padding: 5px;
+  cursor: pointer;
+}

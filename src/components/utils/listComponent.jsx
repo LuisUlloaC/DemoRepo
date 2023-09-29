@@ -1,5 +1,6 @@
 import React from 'react';
-import ListBody from './listBody';
+import ListBody from './listBody2';
+import FilterSVG from '../../assets/filterSVG';
 
 const List =({data})=>{
 
@@ -20,11 +21,11 @@ const List =({data})=>{
                     marginRight: '5%', 
                     maxHeight: '25%'}}>
                         <span style={{display: 'flex',fontWeight: 700}}>COD WARZONE</span>
-                        <button style={{display: 'flex',justifyContent: 'center'}}>+</button>
+                        <FilterSVG className="NavBarSVG" style={{marginBottom: '10px', maxHeight: '150cqw'}}/>
                 </div>
             </div>
             <hr className="Divider" style={{alignSelf: 'center' ,backgroundColor: '#a34'}} />
-            <ul className="List Hoverable-list-item" style={{display: 'flex', flexDirection: 'column', overflowY: 'scroll'}}>
+            <ul className="list-container" >
                 {data.map((obj, index) => {
                     return (
                         <ListBody number={index + 1} name={obj.name} />
