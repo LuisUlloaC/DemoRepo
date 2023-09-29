@@ -1,7 +1,7 @@
 import './App.css';
+import './AppBase.css'
 import CardContainer from './components/utils/cardContainer';
 import CategoriesCard from './components/utils/categoriesCard';
-import PromotionalSVG from './assets/promotionalSVG';
 import SessionCard from './components/session/sessionCard';
 import SearchCard from './components/utils/searchCard';
 
@@ -75,11 +75,9 @@ function App() {
       <CardContainer className="MainCardContainer">
         <SessionCard/>
         <div className="BigCardItemCenter">
-          <PromotionalSVG className="PromotionalSVG" primaryColor='#5b0cab'/>
+          <img src='https://i.ibb.co/s1K1jNL/fortnite-Promo1.png' alt=''/>
         </div>
-        <div className="BigCardItemRight">
-          <SearchCard/>
-        </div>
+        <SearchCard/>
       </CardContainer>
       
       <div className="GroupCardLayout">

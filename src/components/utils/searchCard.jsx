@@ -6,7 +6,7 @@ const SearchCard =()=>{
 
     const partyData = [
         {
-            'name': "Dr Teamaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            'name': "Dr Team"
         },
         {
             'name': "Mia Plays"
@@ -19,6 +19,15 @@ const SearchCard =()=>{
         },
         {
             'name': "Abag Man"
+        },
+        {
+            'name': "AMohamedbag Man"
+        },
+        {
+            'name': "Test Man"
+        },
+        {
+            'name': "Bug Man"
         }
     ]
 
@@ -64,7 +73,7 @@ const SearchCard =()=>{
     }
 
     return(
-        <div className="BigCardItemRight" style={{marginRight: "10%" , justifyContent: 'flex-start'}}>
+        <div className="BigCardItemRight" style={{display: 'flex', marginRight: "2%" , width: '50%', justifyContent: 'flex-start'}}>
             <div style={{display: "flex", flexDirection: "row", justifySelf: "center"}}>
                 <span className="Text" style={{color: '#8a888c', fontWeight: 700}}>01.</span>
                 <span className="Text">Choose Platform</span>
@@ -72,21 +81,17 @@ const SearchCard =()=>{
 
             <div className='GroupCardMainLayout' style={{backgroundColor: "#18171f", 
                 borderRadius: 12, justifyContent: "space-evenly", height: "fit-content"}}>
-                <div className={`${tab === 'party'? 'StyledCardButton':'PlainCardButton'}`} 
+                <div className={`${tab === 'party'? 'SelectedTabOnSearchCard':'PlainCardButton'}`} 
                     onClick={()=> handleTabChange('party')}
-                    style={tab === 'party'? {display: 'flex',height: '5vh', 
-                                            flexGrow: 2, justifyContent: 'center', 
-                                            fontSize: '2.5vh'}:{}}>Party</div>
+                    >Party</div>
 
-                <div className={`${tab === 'matchs'? 'StyledCardButton':'PlainCardButton'}`} 
+                <div className={`${tab === 'matchs'? 'SelectedTabOnSearchCard':'PlainCardButton'}`} 
                     onClick={()=> handleTabChange('matchs')} 
-                    style={tab === 'matchs'? {display: 'flex',height: '5vh',
-                                            flexGrow: 2, justifyContent: 'center', fontSize: '2.5vh'}:{}}>Matchs</div>
+                    >Matchs</div>
 
-                <div className={`${tab === 'streams'? 'StyledCardButton':'PlainCardButton'}`} 
+                <div className={`${tab === 'streams'? 'SelectedTabOnSearchCard':'PlainCardButton'}`} 
                     onClick={()=> handleTabChange('streams')}
-                    style={tab === 'streams'? {display: 'flex',height: '5vh', 
-                                            flexGrow: 2, justifyContent: 'center', fontSize: '2.5vh'}:{}}>Streams</div>
+                    >Streams</div>
             </div>
 
             <div style={{display: "flex", flexDirection: "row", justifySelf: "center"}}>
@@ -95,7 +100,7 @@ const SearchCard =()=>{
             </div>
 
             <div className='GroupCardMainLayout' style={{backgroundColor: "#18171f", flexDirection: "column",
-                borderRadius: 12, justifyContent: "space-evenly", height: "fit-content"}}>
+                borderRadius: 12, justifyContent: "space-evenly"}}>
                     {tab === 'party'? <List data={partyData}/>: null}
                     {tab === 'matchs'? <List data={matchData}/>: null}
                     {tab === 'streams'? <List data={streamsData}/>: null}
