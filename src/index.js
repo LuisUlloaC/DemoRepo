@@ -10,21 +10,25 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './components/navigationBar/navBar';
+import LoginForm from './components/session/LoginForm';
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route element={
-      <div>
-        <Navbar/>
-        <Outlet/>
-      </div>
-    }>
-      <Route path="/" element={<App/>} />
-      <Route path="/streams" element={<App/>} />
-      <Route path="/party" element={<App/>} />
-      <Route path="/premium" element={<App/>} />
-    </Route>
+    <>
+      <Route element={
+        <div>
+          <Navbar/>
+          <Outlet/>
+        </div>
+      }>
+        <Route path="/" element={<App/>} />
+        <Route path="/streams" element={<App/>} />
+        <Route path="/party" element={<App/>} />
+        <Route path="/premium" element={<App/>} />
+      </Route>
+      <Route path='/login' element={<LoginForm/>}/>
+    </>
   )
 );
 

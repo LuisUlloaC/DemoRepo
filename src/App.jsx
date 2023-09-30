@@ -1,9 +1,9 @@
 import './App.css';
-import './AppBase.css'
 import CardContainer from './components/utils/cardContainer';
 import CategoriesCard from './components/utils/categoriesCard';
 import SessionCard from './components/session/sessionCard';
 import SearchCard from './components/utils/searchCard';
+import TimeWidget from './components/utils/timeWidget';
 
 function App() {
 
@@ -75,6 +75,7 @@ function App() {
       <CardContainer className="MainCardContainer">
         <SessionCard/>
         <div className="BigCardItemCenter">
+          <TimeWidget/>
           <img src='https://i.ibb.co/s1K1jNL/fortnite-Promo1.png' alt=''/>
         </div>
         <SearchCard/>
