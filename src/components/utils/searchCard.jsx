@@ -73,14 +73,13 @@ const SearchCard =()=>{
     }
 
     return(
-        <div className="BigCardItemRight" style={{display: 'flex', marginRight: "2%" , width: '50%', justifyContent: 'flex-start'}}>
-            <div style={{display: "flex", flexDirection: "row", justifySelf: "center"}}>
+        <div className="BigCardItemRight" >
+            <div className='EnumeratedHeader'>
                 <span className="Text" style={{color: '#8a888c', fontWeight: 700}}>01.</span>
                 <span className="Text">Choose Platform</span>
             </div>
 
-            <div className='GroupCardMainLayout' style={{backgroundColor: "#18171f", 
-                borderRadius: 12, justifyContent: "space-evenly", height: "fit-content"}}>
+            <div className='TabSelectorLayout'>
                 <div className={`${tab === 'party'? 'SelectedTabOnSearchCard':'PlainCardButton'}`} 
                     onClick={()=> handleTabChange('party')}
                     >Party</div>
@@ -94,13 +93,12 @@ const SearchCard =()=>{
                     >Streams</div>
             </div>
 
-            <div style={{display: "flex", flexDirection: "row", justifySelf: "center"}}>
+            <div className='EnumeratedHeader'>
                 <span className="Text" style={{color: '#8a888c', fontWeight: 700}}>02.</span>
                 <span className="Text">Searching Game</span>
             </div>
 
-            <div className='GroupCardMainLayout' style={{backgroundColor: "#18171f", flexDirection: "column",
-                borderRadius: 12, justifyContent: "space-evenly"}}>
+            <div className='ListBaseLayout'>
                     {tab === 'party'? <List data={partyData}/>: null}
                     {tab === 'matchs'? <List data={matchData}/>: null}
                     {tab === 'streams'? <List data={streamsData}/>: null}

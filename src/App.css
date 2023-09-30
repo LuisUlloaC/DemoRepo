@@ -17,6 +17,7 @@
   background-color: #7f7d7d;
   height: 1px;
   width: 95%;
+  align-self: center;
 }
 
 /* NAVBAR */
@@ -110,7 +111,20 @@
   flex-direction: column;
   padding-right: 5;
   height: 100%;
-  max-width: 30cqw;
+  max-width: 30cqw; 
+  margin-right: 2%;
+  width: 50%;
+  justify-content: flex-start;
+}
+
+.HeaderOfList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-height: 25%;
 }
 
 .StyledCardButton {
@@ -158,6 +172,45 @@
   width: 30cqw;
   height: 60cqh;
   margin-bottom: 2%;
+}
+
+.ListBaseLayout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+  background-color: #18171f;
+  flex-direction: column;
+  border-radius: 12px;
+  justify-content: "space-evenly";
+}
+
+.ListContainer {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 1005;
+  height: 55vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: aqua;
+}
+
+.TabSelectorLayout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+  background-color: #18171f;
+  border-radius: 12px;
+  justify-content: space-evenly;
+  height: fit-content;
+}
+
+.EnumeratedHeader {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
 }
 
 .Arrow {
@@ -252,6 +305,7 @@
   justify-content: space-evenly;
   padding: 10px;
   margin: 10px;
+  background-color: #fcfcfc;
   
 }
 
