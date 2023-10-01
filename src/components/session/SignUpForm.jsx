@@ -8,7 +8,7 @@ const SignUpForm =()=> {
             <PromotionalSVG className="PromotionalSVG" primaryColor='#5b0cab'/>
             <div className="BigCardItemRight">
                 <div className='CardSessionLayout'>
-                    <span style={{display: "flex",fontSize: '5vh', fontWeight: 700, justifyContent: "center"}}>Create Account</span>
+                    <span style={{display: "flex",fontSize: '5vh', fontWeight: 700, justifyContent: "center"}}>Sign Up</span>
                     <div className="DataLayout">
                         <label for="uname"><b>Username:</b></label>
                         <input className="input"placeholder="Enter Username" name="uname" required/>
