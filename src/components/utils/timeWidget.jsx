@@ -14,8 +14,8 @@ const TimeWidget =()=> {
 
     return (
         <div style={{display: "flex", justifyContent: "center"}}>
-            <UserBadge/>
             <div className="Timer">
+            <UserBadge/>
                 <span style={{fontSize: '3vh'}}>{time}</span>
             </div>
         </div>

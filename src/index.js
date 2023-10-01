@@ -11,6 +11,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './components/navigationBar/navBar';
 import LoginForm from './components/session/LoginForm';
+import SignUpForm from './components/session/SignUpForm';
 
 
 const router = createBrowserRouter(
@@ -27,7 +28,8 @@ const router = createBrowserRouter(
         <Route path="/party" element={<App/>} />
         <Route path="/premium" element={<App/>} />
       </Route>
-      <Route path='/login' element={<LoginForm/>}/>
+      <Route path='/signin' element={<LoginForm/>}/>
+      <Route path='/signup' element={<SignUpForm/>}/>
     </>
   )
 );

@@ -1,9 +1,8 @@
+import UserBadgeSVG from "../../assets/userBagdeSVG/userBadgeSVG";
 
 const UserBadge = () => {
     return (
-      <div className="UserBadge">
-        hola
-      </div>
+        <UserBadgeSVG className="UserBadge"/>
     );
   };
 
