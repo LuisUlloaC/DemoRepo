@@ -12,3 +12,25 @@ code {
     monospace;
 }
 
+:root {
+  --sessionGradient: linear-gradient(250deg, #18171f, #483d8b);
+  --background: #dcdfe4;
+  --text-primary: #000000;
+  --bigCardCenter: #7b00ff;
+  --cardContainer: #ffffff;
+  --divider: #1c1c1c;
+  --btnBelowList: #000000;
+  --btnBelowListText: #fafafa;
+}
+
+[data-theme='dark'] {
+  --sessionGradient: linear-gradient(250deg, #18171f, #483d8b);
+  --background: #18171f;
+  --text-primary: #fcfcfc;
+  --bigCardCenter: #ff7f50;
+  --cardContainer: #2d3036;
+  --divider: #7f7d7d;
+  --btnBelowList: #fcfcfc;
+  --btnBelowListText: #000000;
+}
+

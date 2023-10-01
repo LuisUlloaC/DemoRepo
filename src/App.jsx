@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import CardContainer from './components/utils/cardContainer';
 import CategoriesCard from './components/utils/categoriesCard';
 import SessionCard from './components/session/sessionCard';
@@ -6,7 +7,7 @@ import SearchCard from './components/utils/searchCard';
 import TimeWidget from './components/utils/timeWidget';
 
 function App() {
-
+  
   const colors = [];
   const data = [
     {

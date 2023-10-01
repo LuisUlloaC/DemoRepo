@@ -1,12 +1,12 @@
 .App {
-  background-color: #18171f;
+  background-color: var(--background);
   min-height: 100vh;
   min-width: 95vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--text-primary);
   padding-top: 10vh
 }
 
@@ -23,7 +23,7 @@
 }
 
 .SessionBackground{
-  background: linear-gradient(250deg, #18171f, #483d8b);
+  background: linear-gradient(250deg, var(--background), #483d8b);
   background-size: 200% 200%;
   animation: gradient 6s ease infinite;
   min-height: 100vh;
@@ -40,7 +40,7 @@
   min-height: 40vh;
   max-height: 80vh;
   justify-content: center;
-  background-color: #2d3036;
+  background-color: var(--cardContainer);
   padding-top: 2%;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -62,7 +62,7 @@
   font-weight: 500;
   background: none;
   border-radius: 0;
-  color: #aaacb1;
+  color: var(--divider);
   border-radius: 12px;
 }
 
@@ -74,18 +74,18 @@
   align-items: center;
   height: 50vh;
   margin-bottom: 5%;
-  background-color: #18171f;
+  background-color: var(--background);
   border-radius: 12px;
   overflow: hidden;
   padding: 10%;
-  color: #fcfcfc
+  color: var(--text-primary);
 }
 
 .Divider {
   border: none;
-  border-top: 1px solid #8c8a8a;
-  color: #737171;
-  background-color: #7f7d7d;
+  border-top: 1px solid var(--divider);
+  color: var(--divider);
+  background-color: var(--divider);
   height: 1px;
   width: 95%;
   align-self: center;
@@ -127,7 +127,7 @@
   min-height: 40vh;
   max-height: 80vh;
   justify-content: center;
-  background-color: #2d3036;
+  background-color: var(--cardContainer);
   margin-bottom: 5%;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -153,7 +153,7 @@
   width: 20%;
   height: 30%;
   margin: 1%;
-  background-color: #2d3036;
+  background-color: var(--cardContainer);
 }
 
 .BigCardItemLeft {
@@ -173,7 +173,7 @@
   margin-right: 2%;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-color: coral;
+  background-color: var(--bigCardCenter);
 }
 
 .BigCardItemRight {
@@ -200,7 +200,7 @@
 
 .StyledCardButton {
   display: flex;
-  background-color: gray;
+  background-color: var(--divider);
   height: fit-content;
   border-radius: 15px;
   font-weight: 700;
@@ -209,7 +209,7 @@
   text-align: center;
   align-items: center;
   padding: 1%;
-  color:#fcfcfc;
+  color: var(--text-primary);
   box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
 }
 
@@ -222,7 +222,7 @@
   text-align: center;
   align-items: center;
   padding: 2%;
-  color:#fcfcfc;
+  color: var(--text-primary);
 }
 
 .CategoriesCard {
@@ -253,6 +253,7 @@
   width: 30cqw;
   height: 60cqh;
   margin-bottom: 2%;
+  fill: currentColor;
 }
 
 .ListBaseLayout {
@@ -260,7 +261,7 @@
   flex-direction: row;
   height: 50vh;
   margin-bottom: 5%;
-  background-color: #18171f;
+  background-color: var(--background);
   border-radius: 12px;
   overflow: hidden;
 }
@@ -285,6 +286,8 @@
   padding-top: 2vh;
   border-radius: 8px;
   border-width: 0;
+  color: var(--btnBelowListText);
+  background-color: var(--btnBelowList);
   box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
 }
 
@@ -294,7 +297,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 5%;
-  background-color: #18171f;
+  background-color: var(--background);
   border-radius: 12px;
   justify-content: space-evenly;
   height: fit-content;
@@ -314,7 +317,7 @@
 }
 
 .Container {
-  background-color: #18171f;
+  background-color: var(--background);
   display: flex;
   flex-direction: row;
   min-width: 10vw;
@@ -328,14 +331,13 @@
 .StyledButton {
   display: flex;
   flex-direction: row;
-  background-color: #000000;
+  background-color: var(--background);
   border-radius: 15px;
-  border: 2px solid gray;
+  border: 2px solid var(--divider);
   min-width: 10vw;
   height: 15%;
   justify-content: center;
   padding: 2%;
-  color:#fcfcfc;
   box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
 }
 
@@ -343,14 +345,14 @@
 .NavBarStyledButton {
   display: flex;
   flex-direction: row;
-  background-color: #000000;
+  background-color: var(--btnBelowList);
   border-radius: 15px;
-  border: 2px solid gray;
+  border: 2px solid var(--divider);
   min-width: 10vw;
   height: 15%;
   justify-content: center;
   padding: 2%;
-  color:#fcfcfc;
+  color:var(--btnBelowListText);
   box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
 }
 
@@ -362,7 +364,7 @@
   font-weight: 700;
   text-align: center;
   padding: 2%;
-  color:#fcfcfc;
+  color:var(--text-primary);
 }
 
 .NavBarPlainButton {
@@ -373,7 +375,7 @@
   font-weight: 700;
   text-align: center;
   padding: 2%;
-  color:#fcfcfc;
+  color:var(--text-primary);
 }
 
 .NavBarSVG {
@@ -384,7 +386,7 @@
   font-weight: 700;
   text-align: center;
   padding: 2%;
-  color:#fcfcfc;
+  color:var(--text-primary);
 }
 
 
@@ -392,7 +394,7 @@
   display: flex;
   width: 2vw;
   height: 3vh;
-  color:#fcfcfc;
+  color:var(--text-primary);
   padding-top: 1%;
 }
 
@@ -412,7 +414,7 @@
   padding: 1%;
   font-size: 3vh;
   font-weight: 700;
-  background-color: #8c8a8a;
+  background-color: var(--divider);
   border-radius: 12px;
 }
 
@@ -428,8 +430,8 @@
 
 .badge {
   border-radius: 50%;
-  background-color: #0b0b0b;
-  color: white;
+  background-color: var(--background);
+  color: var(--text-primary);
   padding: 5px;
   margin-right: 10px;
   justify-content: center;
@@ -454,9 +456,9 @@
 }
 
 .plus-btn {
-  background-color: #8a8989;
+  background-color: var(--divider);
   border-radius: 5px;
-  color: #fff8f8;
+  color: var(--text-primary);
   padding: 2px;
   cursor: pointer;
 }
@@ -465,7 +467,7 @@
   display: flex;
   background-color: #fcfcfc;
   border-radius: 18px;
-  color: coral;
+  color: var(--bigCardCenter);
   justify-content: center;
   width: 30%;
   padding-top: 0.5%;
@@ -582,15 +584,7 @@
   }
 
   .Timer {
-    display: flex;
-    background-color: #fcfcfc;
-    border-radius: 18px;
-    color: coral;
-    justify-content: center;
     width: 40%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-    position: relative;
   }
 
   .FilterSVG {
@@ -602,6 +596,5 @@
     display: flex;
     width: 10vw;
     height: 50px;
-    color:#fcfcfc;
   }
 }
