@@ -1,13 +1,13 @@
 .App {
   background-color: #18171f;
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 95vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
-  padding-top: 10vh;
+  padding-top: 10vh
 }
 
 .Divider {
@@ -17,6 +17,7 @@
   background-color: #7f7d7d;
   height: 1px;
   width: 95%;
+  align-self: center;
   align-self: center;
 }
 
@@ -51,7 +52,7 @@
 /* CARDS */
 .MainCardContainer {
   display: flex;
-  width: 90%;
+  width: 85%;
   min-height: 40vh;
   max-height: 80vh;
   justify-content: center;
@@ -138,6 +139,7 @@
   align-items: center;
   padding: 1%;
   color:#fcfcfc;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
 }
 
 .PlainCardButton {
@@ -185,23 +187,36 @@
 .ListBaseLayout {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  height: 50vh;
   margin-bottom: 5%;
   background-color: #18171f;
-  flex-direction: column;
   border-radius: 12px;
-  justify-content: space-evenly;
+  overflow: hidden;
 }
 
-.ListContainer {
-  display:flex;
-  flex-direction: column;
+.ListItem {
+  display: flex;
   justify-content: flex-start;
-  width: 100%;
-  height: 55vh;
+  flex-direction: column;
   overflow-y: scroll;
-  overflow-x: hidden;
+  width: 20vw;
+  height: 30vh;
 }
+
+.ButtonBelowList {
+  display: flex;
+  width: 80%;
+  height: 15%;
+  margin-left: 10%; 
+  margin-top: 1%;
+  margin-bottom: 0.5%;
+  justify-content: center;
+  padding-top: 2vh;
+  border-radius: 8px;
+  border-width: 0;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+
 
 .TabSelectorLayout {
   display: flex;
@@ -250,6 +265,7 @@
   justify-content: center;
   padding: 2%;
   color:#fcfcfc;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
 }
 
 .PlainButton {
@@ -275,20 +291,19 @@
 }
 
 
+.FilterSVG {
+  display: flex;
+  width: 2vw;
+  height: 3vh;
+  color:#fcfcfc;
+  padding-top: 1%;
+}
+
+
 
 .Text {
   display: flex;
   font-size: 1.3cqw;
-}
-
-
-.ListItem {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  overflow-y: scroll;
-  width: 100%;
-  height: 55vh;
 }
 
 .SelectedTabOnSearchCard {
@@ -305,13 +320,12 @@
 }
 
 .list-item {
-  height: 50px;
+  height: 5vh;
   flex: 1;
   display: flex;
   align-items: stretch;
   justify-content: space-evenly;
   padding: 10px;
-  margin: 10px;
   
 }
 
@@ -319,8 +333,10 @@
   border-radius: 50%;
   background-color: #0b0b0b;
   color: white;
-  padding: 5px 10px;
+  padding: 5px;
   margin-right: 10px;
+  justify-content: center;
+  font-size: x-small;
 }
 
 .circular {
@@ -341,11 +357,10 @@
 }
 
 .plus-btn {
-  background-color: white;
-  border: 1px solid #8a8989;
-  border-radius: 50%;
-  color: #8a8989;
-  padding: 5px;
+  background-color: #8a8989;
+  border-radius: 5px;
+  color: #fff8f8;
+  padding: 2px;
   cursor: pointer;
 }
 

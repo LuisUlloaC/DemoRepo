@@ -10,21 +10,24 @@ const List =({data})=>{
 
 
     return(
-        <div className="ListItem">
-            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly'}}>
+        <div>
+            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: 5, maxHeight: '5vh'}}>
                 <div className='HeaderOfList'>
                         <span style={{display: 'flex',fontWeight: 700}}>COD WARZONE</span>
-                        <FilterSVG className="NavBarSVG" style={{marginBottom: '10px', maxHeight: '150cqw'}}/>
+                        <FilterSVG className="FilterSVG"/>
                 </div>
             </div>
             <hr className="Divider"/>
-            <ul className="ListContainer" >
+            <div className="ListItem">
                 {data.map((obj, index) => {
                     return (
                         <ListBody number={index + 1} name={obj.name} />
                     )
                 })}
-            </ul>
+            </div>
+            <button className='ButtonBelowList'>
+                Search now
+            </button>
         </div>
     )
 }
